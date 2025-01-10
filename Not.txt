@@ -1,0 +1,32 @@
+
+Class-->Table
+Property-->Column
+
+Access Modifiers (Oluþturmus oldugun bir sýnýfýn veya bir metodun kimler tarafýndan eriþilip eriþilemeyeceðini belirlendiði bir kýsýtlama  )
+-Public --> Solution altýndaki her yerden eriþim saðlamaya izin veriyor
+-Private --> Sadece bulunduðu class veya interface yani bulunduðu alandan eriþim saðlamaya izin veriyo
+-Internal --> Sadece bulunduðu katmandan eriþim saðlamaya izin veriyor mesela sadece entitiy Layer katmanýnda eriþilebiliyor
+-Protected --> bir sýnýf ve o sýnýfý miras alan yerlerde eriþim saðlanýyor
+
+Field-Variable-Property
+public class Category
+{
+  int x; --> Bir deðiþken direkt olarak sýnýfýn içinde tanýmlanýrsa bu bir Field
+  public int y { get; set; } --> bu deðiþken yapýsý get ve set diye deger alýrsa bu bir property oluyor
+  void test() { --> Method içerisinde tanýmlanýrsa variable
+  int z;
+  }
+}
+
+public virtual Category Category { get; set; }
+Bu tanýmda, Category özelliði virtual olarak iþaretlendiði için,
+Entity Framework Lazy Loading yaparak, Product nesnesi ilk baþta yüklenirken
+Category nesnesini yüklemez. Ancak, eðer uygulama Category'ye eriþmeye
+çalýþýrsa (örneðin, product.Category), o an veritabanýndan Category verisini
+çeker ve iliþkili nesne yüklenmiþ olur.
+Lazy loading sayesinde, iliþkili nesneler yalnýzca gerçekten ihtiyaç duyulduðunda
+yüklenir. Bu da baþlangýçta gereksiz verilerin yüklenmesini engeller ve
+uygulamanýn performansýný artýrýr.
+Eðer virtual kullanmazsanýz, Entity Framework lazy loading'i etkinleþtiremez 
+ve veritabanýndan tüm iliþkili nesneleri (örneðin, kategori verisi) yüklü bir
+þekilde alýr
