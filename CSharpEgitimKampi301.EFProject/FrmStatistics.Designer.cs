@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.lblLocationCount = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblSumCapacity = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -88,16 +88,6 @@
             this.panel1.Size = new System.Drawing.Size(256, 142);
             this.panel1.TabIndex = 0;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(49, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Lokasyon Sayısı";
-            // 
             // lblLocationCount
             // 
             this.lblLocationCount.AutoSize = true;
@@ -107,6 +97,16 @@
             this.lblLocationCount.Size = new System.Drawing.Size(47, 37);
             this.lblLocationCount.TabIndex = 1;
             this.lblLocationCount.Text = "00";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(49, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(138, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Lokasyon Sayısı";
             // 
             // panel2
             // 
@@ -182,7 +182,7 @@
             // 
             this.lblAverageCapacity.AutoSize = true;
             this.lblAverageCapacity.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblAverageCapacity.Location = new System.Drawing.Point(92, 73);
+            this.lblAverageCapacity.Location = new System.Drawing.Point(56, 73);
             this.lblAverageCapacity.Name = "lblAverageCapacity";
             this.lblAverageCapacity.Size = new System.Drawing.Size(47, 37);
             this.lblAverageCapacity.TabIndex = 1;
@@ -273,7 +273,7 @@
             // 
             this.lblAvgLocationPrice.AutoSize = true;
             this.lblAvgLocationPrice.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblAvgLocationPrice.Location = new System.Drawing.Point(92, 73);
+            this.lblAvgLocationPrice.Location = new System.Drawing.Point(58, 73);
             this.lblAvgLocationPrice.Name = "lblAvgLocationPrice";
             this.lblAvgLocationPrice.Size = new System.Drawing.Size(47, 37);
             this.lblAvgLocationPrice.TabIndex = 1;
@@ -303,7 +303,7 @@
             // 
             this.lblLastCountryName.AutoSize = true;
             this.lblLastCountryName.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblLastCountryName.Location = new System.Drawing.Point(57, 73);
+            this.lblLastCountryName.Location = new System.Drawing.Point(46, 64);
             this.lblLastCountryName.Name = "lblLastCountryName";
             this.lblLastCountryName.Size = new System.Drawing.Size(47, 37);
             this.lblLastCountryName.TabIndex = 1;
@@ -393,7 +393,7 @@
             // 
             this.lblMaxCapacityLocation.AutoSize = true;
             this.lblMaxCapacityLocation.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblMaxCapacityLocation.Location = new System.Drawing.Point(92, 73);
+            this.lblMaxCapacityLocation.Location = new System.Drawing.Point(46, 73);
             this.lblMaxCapacityLocation.Name = "lblMaxCapacityLocation";
             this.lblMaxCapacityLocation.Size = new System.Drawing.Size(47, 37);
             this.lblMaxCapacityLocation.TabIndex = 1;
